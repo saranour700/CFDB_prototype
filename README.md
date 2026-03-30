@@ -22,11 +22,6 @@ It scrapes real product data from Canadian sources, cleans and transforms it usi
 ### Products by Province
 <img width="1400" height="617" alt="Screenshot From 2026-03-31 00-08-22" src="https://github.com/user-attachments/assets/9885f2a0-2ec2-49ce-8a94-f38852539674" />
 
-### Top 10 Brands
-![Top Brands](data/gold/top_brands.png)
-
-### Word Cloud of Product Descriptions
-![Word Cloud](data/gold/wordcloud.png)
 
 ##  How to Run
 
