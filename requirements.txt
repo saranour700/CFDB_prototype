@@ -1,0 +1,9 @@
+requests==2.33.0
+beautifulsoup4==4.14.3
+pandas==3.0.1
+matplotlib>=3.7
+seaborn>=0.12
+jupyter>=1.0
+duckdb>=0.9
+selenium>=4.15
+playwright==1.58.0
