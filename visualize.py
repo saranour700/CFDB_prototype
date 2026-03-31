@@ -10,7 +10,6 @@ print(df.head())
 print("\nData info:")
 print(df.info())
 
-# استخراج المقاطعة من عمود raw_html
 def extract_province(html):
     match = re.search(r'>([^<>]*?(?:Ontario|Quebec|British Columbia|Alberta|Manitoba|Saskatchewan|Nova Scotia|New Brunswick|Newfoundland|PEI|Yukon|Northwest Territories|Nunavut))<', html, re.IGNORECASE)
     if match:
@@ -23,7 +22,6 @@ print("\nProvince distribution:")
 province_counts = df['province'].value_counts()
 print(province_counts)
 
-# 1. Bar chart - عدد المنتجات حسب المقاطعة
 if not province_counts.empty:
     plt.figure(figsize=(10,6))
     province_counts.plot(kind='bar', color='skyblue', edgecolor='black')
@@ -37,7 +35,6 @@ if not province_counts.empty:
 else:
     print("No province data extracted yet.")
 
-# 2. عدد المنتجات حسب الموقع (حتى لو موقع واحد)
 site_counts = df['site'].value_counts()
 plt.figure(figsize=(8,5))
 site_counts.plot(kind='bar', color='lightgreen', edgecolor='black')
@@ -49,7 +46,6 @@ plt.tight_layout()
 plt.savefig('data/gold/products_by_site.png')
 print("Saved: data/gold/products_by_site.png")
 
-# 3. عرض جدول بالـ Top 10 products names
 print("\nTop 10 product names:")
 print(df['name'].head(10))
 
